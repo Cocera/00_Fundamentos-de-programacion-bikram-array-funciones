@@ -16,13 +16,16 @@ for (let i = 0; i <=9; i++) {
      }
 };
 
+
 // 04 ARRAYS
 let arrayBidimensional = [[0, 1, 2], ['a', 'b', 'c']]
+
 
 // 05 FUNCTIONS
 function suma(num_1, num_2) {
     return num_1 + num_2
 };
+
 
         // 06 FUNCTIONS
         function potenciacion(num_1, num_2) {
@@ -69,6 +72,7 @@ for (let i = 0; i >= -9; i--) {
     arrayNumerosNeg.push(i)
 };
 
+
 // 16 ARRAYS
 let holaMundo = ["Hola", "Mundo"];
 
@@ -76,21 +80,41 @@ let holaMundo = ["Hola", "Mundo"];
 // 17 ARRAYS
 let loGuardoTodo = ['hola', 'que', 23, 42.33, 'tal'];
 
+
 // 18 ARRAYS
 let arrayDeArrays = [[756, 'nombre'], [225, 'apellido'], [298, 'direccion']];
 
 
 // 19 FUNCTIONS
+function multiplicacion(num_1, num_2) {
+    return num_1*num_2;
+};
 
 
 // 20 FUNCTIONS
+function division(num_1, num_2) {
+    return num_1/num_2;
+};
 
 
 // 21 FUNCTIONS
+function esPar(num_1) {
+    if (num_1%2 === 0) {
+        return true
+    } else {
+        return false
+    };
+};
 
 
-// 22 FUNCTIONS
-
+            // 22 FUNCTIONS
+            let arrayResults = [];
+            function arrayFunciones(num_1, num_2) {
+                arrayResults.push(num_1+num_2);
+                arrayResults.push(num_1-num_2);
+                arrayResults.push(num_1*num_2);
+                console.log(arrayResults);
+            }
 
 // 23 ARRAYS & FUNCTIONS
 
