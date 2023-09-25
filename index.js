@@ -106,7 +106,6 @@ function esPar(num_1) {
     };
 };
 
-
             // 22 FUNCTIONS
             let arrayResults = [];
             function arrayFunciones(num_1, num_2) {
@@ -116,7 +115,13 @@ function esPar(num_1) {
                 console.log(arrayResults);
             }
 
-// 23 ARRAYS & FUNCTIONS
+
+            // 23 ARRAYS & FUNCTIONS
+            function ordenarArray2(array) {
+                console.log(array.sort(function (a, b){
+                    return a - b;
+                }));
+            };
 
 
 // 24 ARRAYS & FUNCTIONS
