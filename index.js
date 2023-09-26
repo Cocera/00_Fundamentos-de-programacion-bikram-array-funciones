@@ -43,29 +43,25 @@ function separarPalabras(str) {
 function repetirString(string, num) {
     return string.repeat(num);
 };
+
 // Sin usar .repeat()
-// function repetirString(string, num) {
-//     let resultado = "";
-//     for (let i = 1; i <= num; i++) {
-//         resultado += string;
-//     }
-//      return resultado;
-// };
-// Abreviado quedaria
+/*
+function repetirString(string, num) {
+    let resultado = "";
+    for (let i = 1; i <= num; i++) {
+        resultado += string;
+    }
+    return resultado;
+};
+*/
 
 
+// 09 FUNCTIONS
+// function 
 
 
-        // // 09 FUNCTIONS
-        // function esPrimo(num) {
-        //     return (num == 1 || (num%2!=0 && num%3!=0))
-        // }
-
-
-        // // 10 ARRAYS & FUNCTIONS
-        // function ordenarArray(numArray) {
-        //     return numArray.sort((a,b)=>a-b);
-        // }
+// // 10 ARRAYS & FUNCTIONS
+// function 
 
 
 // 11 ARRAYS & FUNCTIONS
@@ -80,29 +76,20 @@ function obtenerPares(numArray) {
 }
 
 
-        // // 12 ARRAYS & FUNCTIONSc
-        // let arrayPalabras = [0, 1, 2];
-        // function pintarArray(numeros) {
-        // return "[" + numeros.toString () + "]";
-        // }
+// 12 ARRAYS & FUNCTIONS
+/* INCORRECTO
+function pintarArray(arrayNum) {
+    return `[${arrayNum.toString()}]`;
+};
+ */
 
 
-        // // 13 ARRAYS & FUNCTIONS
-        // function arrayMapi(arr, func) {
-        //     return arr.map(el => func(el));
-        // };
+// // 13 ARRAYS & FUNCTIONS
+// function 
 
 
-        // // 14 ARRAYS & FUNCTIONS
-        // function eliminarDuplicados(arr) {
-        //     let newArray = [];
-        //     for (let i = 0; i < arr.length; i++) {
-        //     if (newArray.indexOf(arr[i]) == -1) {
-        //         newArray.push(arr[i]);
-        //     }
-        //     }
-        //     return newArray;
-        // }
+// // 14 ARRAYS & FUNCTIONS
+// function 
   
 
 // 15 ARRAYS
@@ -145,63 +132,66 @@ function esPar(num_1) {
     };
 };
 
-            // // 22 FUNCTIONS
-            // let arrayResults = [];
-            // function arrayFunciones(num_1, num_2) {
-            //     arrayResults.push(num_1+num_2);
-            //     arrayResults.push(num_1-num_2);
-            //     arrayResults.push(num_1*num_2);
-            //     console.log(arrayResults);
-            // }
+            
+// 22 FUNCTIONS
+let arrayFunciones = [
+    function suma(a, b) {
+        return a + b;
+    },
+    function resta(a, b) {
+        return a - b;
+    },
+    function multiplicacion(a, b) {
+        return a * b;
+    },
+];
 
-            // let arrayFunciones = [
-            //     function suma(a, b) {
-            //       return a + b;
-            //     },
-            //     function resta(a, b) {
-            //       return a - b;
-            //     },
-            //     function multiplicacion(a, b) {
-            //       return a * b;
-            //     },
-            // ];
+            /* RESULTADO INCORRECTO EJ.22
+            let arrayResults = [];
+            function arrayFunciones(num_1, num_2) {
+                arrayResults.push(num_1+num_2);
+                arrayResults.push(num_1-num_2);
+                arrayResults.push(num_1*num_2);
+                return arrayResults;
+            };
+            */
               
-              
+
+// 23 ARRAYS & FUNCTIONS
+function ordenarArray2(array) {
+    return array.sort((a,b) => a-b);
+};
 
 
-            // // 23 ARRAYS & FUNCTIONS
-            // function ordenarArray2(array) {
-            //     console.log(array.sort(function (a, b){
-            //         return a - b;
-            //     }));
-            // };
 
-
-        // // 24 ARRAYS & FUNCTIONS
-        // function obtenerImpares(array) {
-        //     const pares = array.filter(function (num) {
-        //     return num % 2 === 1;
-        //     });
-        //     return pares;
-        // }
+// 24 ARRAYS & FUNCTIONS
+function obtenerImpares(array) {
+    let arrayImpares = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i]%2 !== 0) {
+            arrayImpares.push(array[i])
+        }
+    }
+    return arrayImpares;
+};
     
 
-        // // 25 ARRAYS & FUNCTIONS
-        // function sumarArray(arr){
-        //     let total=0;
-        //     for(let i =0; i<arr.length;i++){
-        //     total= total+arr[i];
-        //     }
-        //     return total;
-        // }
+// 25 ARRAYS & FUNCTIONS
+function sumarArray(array) {
+    let sumaTotal = 0;
+    for (let i = 0; i < array.length; i++) {
+        sumaTotal += array[i];
+        }
+        return sumaTotal;
+};
   
 
-        // // 26 ARRAYS & FUNCTIONS
-        // function multiplicarArray(arr){
-        //     let total=1;
-        //     for(let i =0; i<arr.length;i++){
-        //     total= total*arr[i];
-        //     }
-        //     return total;
-        // }
+// 26 ARRAYS & FUNCTIONS
+function multiplicarArray(array) {
+    let resultadoTotal = 1;
+    for (let i = 0; i < array.length; i++) {
+        resultadoTotal *= array[i];
+    }
+    return resultadoTotal;
+};
     
